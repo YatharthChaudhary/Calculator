@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.0/math.js" 
+    integrity="sha512-bd8Oth+p1rTn+/iUFHsSozuYn7JpmH59vMWe6L+M3huScB/SMTXWkQoME3Ytk0sbGJ40VGp2mO2b8K8FNrewfQ==" crossorigin="anonymous"></script>
+</head>
+<body onkeypress="keyDown(event)" onkeydown="backSpace(event)"  >
+
+     <div class="calculator-grid">
+            <div class="header">
+                <h1 id="output"></h1>
+                <h3 id="input"></h3>
+        </div>
+        <button onclick="calculate('AC')">AC</button>
+        <button  onclick="calculate('DEL')">DEL</button>
+        <button onclick="calculate('/')">/</button>
+        <button onclick="calculate('%')">%</button>
+        <button onclick="calculate('1')">1</button>
+        <button onclick="calculate('2')">2</button>
+        <button onclick="calculate('3')">3</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate('4')">4</button>
+        <button onclick="calculate('5')">5</button>
+        <button onclick="calculate('6')">6</button>
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('7')">7</button>
+        <button onclick="calculate('8')">8</button>
+        <button onclick="calculate('9')">9</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('.')" >.</button>
+        <button onclick="calculate('0')">0</button>
+        <button onclick="calculate('=')" class="equal">=</button>
+    </div>  
+    
+    <script src="/calculator.js"></script>
+
+</body>
+</html>
